@@ -17,8 +17,7 @@ public class App
         String expiryDate = "28/11/2020";
         Date date = sdf.parse(expiryDate);
 
-        Animal animal = new Animal();
-        animal.name = "Rex";
+        Animal animal = new Animal("Rex");
         animal.age = 2.6;
         animal.health = 6;
         animal.hunger = 9;
@@ -32,8 +31,7 @@ public class App
         adopter.name = "Mihai";
         adopter.moneyAmount = 250.74;
 
-        AnimalFood animalFood = new AnimalFood();
-        animalFood.name = "Pedigree";
+        AnimalFood animalFood = new AnimalFood("Pedigree");
         animalFood.price = 21.99;
         animalFood.quantity = 15;
         animalFood.availability = true;
