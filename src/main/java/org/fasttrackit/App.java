@@ -25,6 +25,8 @@ public class App
         animal.mood = 3;
         animal.preferateFood = "Pedigree";
         animal.activity = "Frisbee";
+        animal.type = "Domestic";
+        animal.numberOfFeets = 4;
 
         Adopter adopter = new Adopter();
         adopter.name = "Mihai";
@@ -36,6 +38,7 @@ public class App
         animalFood.quantity = 15;
         animalFood.availability = true;
         animalFood.expirationDate = date;
+        animalFood.taste = "Chicken";
 
         Veterinarian veterinarian = new Veterinarian();
         veterinarian.name = "Dr. Popescu";
