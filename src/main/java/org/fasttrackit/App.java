@@ -49,5 +49,8 @@ public class App
 
         System.out.println(animalFood.getExpirationDate());
         System.out.println(animalFood.getAvailability());
+
+        adopter.feeding(animal, animalFood);
+        adopter.recreationActivity(animal);
     }
 }
