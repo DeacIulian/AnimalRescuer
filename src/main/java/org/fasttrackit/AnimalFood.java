@@ -4,12 +4,13 @@ public class AnimalFood extends Food {
 
     private String foodName;
 
-    public AnimalFood(String name){
-        this.name = name;
+    //Constructor food name
+    public AnimalFood(String foodName){
+        this.foodName = foodName;
     }
 
     public void setName(String name){
-        foodName = name;
+        foodName = foodName;
     }
 
     public String getFoodName(){

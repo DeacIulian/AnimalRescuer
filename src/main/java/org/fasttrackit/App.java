@@ -18,35 +18,36 @@ public class App
         Date date = sdf.parse(expiryDate);
 
         Animal animal = new Animal("Rex");
-        animal.age = 2.6;
-        animal.health = 6;
-        animal.hunger = 9;
-        animal.mood = 3;
-        animal.preferateFood = "Pedigree";
-        animal.activity = "Frisbee";
-        animal.type = "Domestic";
-        animal.numberOfFeets = 4;
+        animal.setAge(3.5);
+        animal.setHealth(8);
+        animal.setHunger(9);
+        animal.setMood(3);
+        animal.setPreferateFood("Pedigree");
+        animal.setActivity("Frizbee");
+        animal.setType("Domestic");
+        animal.setNumberOfFeets(4);
 
         Adopter adopter = new Adopter();
-        adopter.name = "Mihai";
-        adopter.moneyAmount = 250.74;
+        adopter.setName("Mihai");
+        adopter.setMoneyAmount(274.38);
 
         AnimalFood animalFood = new AnimalFood("Pedigree");
-        animalFood.price = 21.99;
-        animalFood.quantity = 15;
-        animalFood.availability = true;
-        animalFood.expirationDate = date;
+        animalFood.setPrice(21.99);
+        animalFood.setQuantity(15);
+        animalFood.isAvailability(true);
+        animalFood.setExpirationDate(date);
         animalFood.taste = "Chicken";
 
         Veterinarian veterinarian = new Veterinarian();
-        veterinarian.name = "Dr. Popescu";
-        veterinarian.specialization = "Dogs";
+        veterinarian.setName("Dr. Popescu");
+        veterinarian.setSpecialization("Dogs");
 
         Game game = new Game();
         game.adopter = adopter;
         game.dog = animal;
         game.veterinarian = veterinarian;
 
-        System.out.println(animalFood.expirationDate);
+        System.out.println(animalFood.getExpirationDate());
+        System.out.println(animalFood.getAvailability());
     }
 }

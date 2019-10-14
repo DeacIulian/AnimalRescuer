@@ -1,22 +1,26 @@
 package org.fasttrackit;
 
-public class Animal extends Mamifer{
+public class Animal extends Mamifer {
+    private String type;
+    private int numberOfFeets;
 
-    private String animalName;
-
-    public Animal(String animalName){
-        this.name = animalName;
+    public Animal(String mamiferName) {
+        super(mamiferName);
     }
 
-    public void setAnimalName(String name){
-        animalName = name;
+    public String getType() {
+        return type;
     }
 
-    public String getAnimalName(){
-        return animalName;
+    public void setType(String type) {
+        this.type = type;
     }
 
+    public int getNumberOfFeets() {
+        return numberOfFeets;
+    }
 
-    String type;
-    int numberOfFeets;
+    public void setNumberOfFeets(int numberOfFeets) {
+        this.numberOfFeets = numberOfFeets;
+    }
 }
