@@ -2,21 +2,19 @@ package org.fasttrackit;
 
 public class AnimalFood extends Food {
 
-    private String foodName;
+    private String taste;
 
-    //Constructor food name
-    public AnimalFood(String foodName){
-        this.foodName = foodName;
+    //Constructor for AnimalFood class
+
+    public AnimalFood(String taste){
+        this.taste = taste;
     }
 
-    public void setName(String name){
-        foodName = foodName;
+    public String getTaste() {
+        return taste;
     }
 
-    public String getFoodName(){
-        return foodName;
+    public void setTaste(String taste) {
+        this.taste = taste;
     }
-
-    String taste;
-
 }

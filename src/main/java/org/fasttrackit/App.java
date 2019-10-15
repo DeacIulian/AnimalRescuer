@@ -31,12 +31,12 @@ public class App
         adopter.setName("Mihai");
         adopter.setMoneyAmount(274.38);
 
-        AnimalFood animalFood = new AnimalFood("Pedigree");
+        AnimalFood animalFood = new AnimalFood("Chicken");
+        animalFood.setName("Pedigree");
         animalFood.setPrice(21.99);
         animalFood.setQuantity(15);
         animalFood.isAvailability(true);
         animalFood.setExpirationDate(date);
-        animalFood.taste = "Chicken";
 
         Veterinarian veterinarian = new Veterinarian();
         veterinarian.setName("Dr. Popescu");

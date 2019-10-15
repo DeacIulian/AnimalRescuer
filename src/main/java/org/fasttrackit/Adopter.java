@@ -23,8 +23,8 @@ public class Adopter {
 
     //Creating a method wich the Adopter give food to the Animal
 
-    public void feeding(Mamifer mamifer, AnimalFood animalFood){
-        System.out.println(getName() + " just gave some " + animalFood.getName() + " food " +
+    public void feeding(Mamifer mamifer, Food food){
+        System.out.println(getName() + " just gave some " + food.getName() + " food " +
                 " to " + mamifer.getMamiferName());
         mamifer.setHunger(mamifer.getHunger() - 1);
         System.out.println("Hunger level : " + mamifer.getHunger());
