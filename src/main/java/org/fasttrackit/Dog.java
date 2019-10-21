@@ -17,14 +17,15 @@ public class Dog extends Animal{
         this.trained = trained;
     }
 
+    @Override
     public void animalMoodRate(int animalMood) {
 
-        if (animalMood > 7) {
-            System.out.println("The dog is happy and is moving his tail.");
-        } else {
-            System.out.println("You need to play more with your dog!");
-        }
-
+            if (animalMood > 7) {
+                System.out.println(getAnimalName() + " is happy and is moving his tail.");
+            } else {
+                System.out.println("You need to play more with " + getAnimalName() + " !");
+            }
     }
-
 }
+
+

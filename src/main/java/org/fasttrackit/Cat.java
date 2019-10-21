@@ -17,13 +17,13 @@ public class Cat extends Animal{
         this.breed = breed;
     }
 
+    @Override
     public void animalMoodRate(int animalMood) {
 
         if (animalMood > 7) {
-            System.out.println("The cat is happy and is purring.");
+            System.out.println(getAnimalName() + " is happy and is purring.");
         } else {
-            System.out.println("You need to give more affection for your cat!");
+            System.out.println("You need to give more affection to " + getAnimalName() + " !");
         }
-
     }
 }

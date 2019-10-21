@@ -87,9 +87,9 @@ public class Animal  {
     public void animalMoodRate(int animalMood) {
 
         if (animalMood > 7) {
-            System.out.println("The animal is feeling very well!");
+            System.out.println(getAnimalName() + " is feeling very well!");
         }else {
-            System.out.println("The animal need more affection.");
+            System.out.println(getAnimalName() + " need more affection.");
         }
 
     }
