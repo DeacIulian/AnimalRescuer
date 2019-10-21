@@ -25,7 +25,7 @@ public class App
         animal1.setFavoriteFood("Pedigree");
         animal1.setFavoriteActivity("Frizbee");
 
-        Dog dog1 = new Dog("Lord");
+        Animal dog1 = new Dog("Lord");
         dog1.setAnimalAge(3);
         dog1.setFavoriteActivity("Running");
         dog1.setFavoriteFood("Bones");
@@ -33,7 +33,7 @@ public class App
         dog1.setHunger(6);
         dog1.setMood(8);
 
-        Cat cat1 = new Cat("Sisi");
+        Animal cat1 = new Cat("Sisi");
         cat1.setAnimalAge(2);
         cat1.setFavoriteActivity("Playing with ball");
         cat1.setFavoriteFood("Purrina");
