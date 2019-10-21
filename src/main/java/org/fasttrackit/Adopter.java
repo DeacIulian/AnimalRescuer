@@ -27,16 +27,16 @@ public class Adopter {
 
     //Creating a method wich the Adopter give food to the Animal
 
-    public void feeding(Animal animal){
-        System.out.println(getName() + " just gave some " + animal.getFavoriteFood() + " food " +
+    public void feeding(Animal animal, AnimalFood animalFood){
+        System.out.println(getName() + " just gave some " + animalFood.getFoodName() + " food " +
                 " to " + animal.getAnimalName());
         animal.setHunger(animal.getHunger() - 1);
         System.out.println("Hunger level : " + animal.getHunger());
 
     }
 
-    public void recreationActivity(Animal animal) {
-        System.out.println(getName() + " is going for  " + animal.getFavoriteActivity() + " with "
+    public void recreationActivity(Animal animal, Activity activity) {
+        System.out.println(getName() + " is going for  " + activity.getActivityName() + " with "
                 + animal.getAnimalName() + " tonight ");
         animal.setMood(animal.getMood() + 1);
         System.out.println("Mood level: " + animal.getMood());
