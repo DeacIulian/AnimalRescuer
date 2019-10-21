@@ -17,40 +17,50 @@ public class App
         String expiryDate = "28/11/2020";
         Date date = sdf.parse(expiryDate);
 
-        Animal animal = new Animal("Rex");
-        animal.setAge(3.5);
-        animal.setHealth(8);
-        animal.setHunger(9);
-        animal.setMood(3);
-        animal.setPreferateFood("Pedigree");
-        animal.setActivity("Frizbee");
-        animal.setType("Domestic");
-        animal.setNumberOfFeets(4);
+        Animal animal1 = new Animal("Rex");
+        animal1.setAnimalAge(3.5);
+        animal1.setHealth(8);
+        animal1.setHunger(9);
+        animal1.setMood(3);
+        animal1.setFavoriteFood("Pedigree");
+        animal1.setFavoriteActivity("Frizbee");
 
-        Adopter adopter = new Adopter();
+        Dog dog1 = new Dog("Lord");
+        dog1.setAnimalAge(3);
+        dog1.setFavoriteActivity("Running");
+        dog1.setFavoriteFood("Bones");
+        dog1.setHealth(8);
+        dog1.setHunger(6);
+        dog1.setMood(8);
+
+        Cat cat1 = new Cat("Sisi");
+        cat1.setAnimalAge(2);
+        cat1.setFavoriteActivity("Playing with ball");
+        cat1.setFavoriteFood("Purrina");
+        cat1.setHealth(7);
+        cat1.setHunger(5);
+        cat1.setMood(6);
+        Adopter adopter = new Adopter(250);
         adopter.setName("Mihai");
         adopter.setMoneyAmount(274.38);
 
         AnimalFood animalFood = new AnimalFood("Chicken");
-        animalFood.setName("Pedigree");
+        animalFood.setFoodName("Pedigree");
         animalFood.setPrice(21.99);
         animalFood.setQuantity(15);
         animalFood.isAvailability(true);
-        animalFood.setExpirationDate(date);
+        animalFood.setExpiryDate(date);
 
-        Veterinarian veterinarian = new Veterinarian();
+        Veterinarian veterinarian = new Veterinarian("Digestive system");
         veterinarian.setName("Dr. Popescu");
-        veterinarian.setSpecialization("Dogs");
 
-        Game game = new Game();
-        game.adopter = adopter;
-        game.dog = animal;
-        game.veterinarian = veterinarian;
 
-        System.out.println(animalFood.getExpirationDate());
-        System.out.println(animalFood.getAvailability());
 
-        adopter.feeding(animal, animalFood);
-        adopter.recreationActivity(animal);
+        adopter.feeding(animal1);
+        adopter.recreationActivity(animal1);
+        adopter.feeding(dog1);
+        animal1.animalMoodRate(animal1.getMood());
+        dog1.animalMoodRate(dog1.getMood());
+        cat1.animalMoodRate(cat1.getMood());
     }
 }

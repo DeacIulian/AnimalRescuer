@@ -1,16 +1,20 @@
 package org.fasttrackit;
 
 public class Adopter {
-    private String name;
+    private String adopterName;
     private double moneyAmount;
 
+    //Constructor for Adopter
+    public Adopter(double moneyAmount) {
+        this.moneyAmount = moneyAmount;
+    }
 
     public String getName() {
-        return name;
+        return adopterName;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.adopterName = name;
     }
 
     public double getMoneyAmount() {
@@ -23,18 +27,18 @@ public class Adopter {
 
     //Creating a method wich the Adopter give food to the Animal
 
-    public void feeding(Mamifer mamifer, Food food){
-        System.out.println(getName() + " just gave some " + food.getName() + " food " +
-                " to " + mamifer.getMamiferName());
-        mamifer.setHunger(mamifer.getHunger() - 1);
-        System.out.println("Hunger level : " + mamifer.getHunger());
+    public void feeding(Animal animal){
+        System.out.println(getName() + " just gave some " + animal.getFavoriteFood() + " food " +
+                " to " + animal.getAnimalName());
+        animal.setHunger(animal.getHunger() - 1);
+        System.out.println("Hunger level : " + animal.getHunger());
 
     }
 
-    public void recreationActivity(Mamifer mamifer) {
-        System.out.println(getName() + " is going for  " + mamifer.getActivity() + " with "
-                + mamifer.getMamiferName() + " tonight ");
-        mamifer.setMood(mamifer.getMood() + 1);
-        System.out.println("Mood level: " + mamifer.getMood());
+    public void recreationActivity(Animal animal) {
+        System.out.println(getName() + " is going for  " + animal.getFavoriteActivity() + " with "
+                + animal.getAnimalName() + " tonight ");
+        animal.setMood(animal.getMood() + 1);
+        System.out.println("Mood level: " + animal.getMood());
     }
 }

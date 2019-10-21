@@ -5,6 +5,11 @@ public class Veterinarian {
     private String specialization;
 
 
+    //Constructor for veteranian
+    public Veterinarian(String specialization) {
+        this.specialization = specialization;
+    }
+
     public String getName() {
         return name;
     }

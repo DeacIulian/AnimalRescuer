@@ -1,20 +1,67 @@
 package org.fasttrackit;
 
-public class AnimalFood extends Food {
+import java.util.Date;
 
-    private String taste;
+public class AnimalFood {
+
+    private String type;
+    private String foodName;
+    private double price;
+    private double quantity;
+    private boolean availability;
+    private java.util.Date expiryDate;
 
     //Constructor for AnimalFood class
-
-    public AnimalFood(String taste){
-        this.taste = taste;
+    public AnimalFood(String type) {
+        this.type = type;
     }
 
-    public String getTaste() {
-        return taste;
+
+    //Encapsulating atributes for Food class
+    public String getFoodName() {
+        return foodName;
     }
 
-    public void setTaste(String taste) {
-        this.taste = taste;
+    public void setFoodName(String foodName) {
+        this.foodName = foodName;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public double getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(double quantity) {
+        this.quantity = quantity;
+    }
+
+    public boolean isAvailability() {
+        return availability;
+    }
+
+    public void isAvailability(boolean availability) {
+        this.availability = availability;
+    }
+
+    public Date getExpiryDate() {
+        return expiryDate;
+    }
+
+    public void setExpiryDate(Date expiryDate) {
+        this.expiryDate = expiryDate;
+    }
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }
