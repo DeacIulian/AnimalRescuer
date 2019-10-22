@@ -31,6 +31,15 @@ public class Adopter {
         System.out.println(getName() + " just gave some " + animalFood.getFoodName() + " food " +
                 " to " + animal.getAnimalName());
         animal.setHunger(animal.getHunger() - 1);
+
+        if (animal.getFavoriteFood() == animalFood.getFoodName()) {
+
+            animal.setMood(animal.getMood() + 1);
+            System.out.println(animalFood.getFoodName() + " is " + animal.getAnimalName() +
+                    "'s preferate food. Mood level: " + animal.getMood());
+
+        }
+
         System.out.println("Hunger level : " + animal.getHunger());
 
     }
@@ -38,7 +47,15 @@ public class Adopter {
     public void recreationActivity(Animal animal, Activity activity) {
         System.out.println(getName() + " is going for  " + activity.getActivityName() + " with "
                 + animal.getAnimalName() + " tonight ");
-        animal.setMood(animal.getMood() + 1);
-        System.out.println("Mood level: " + animal.getMood());
+        if (animal.getFavoriteActivity() == activity.getActivityName()) {
+
+            animal.setMood(animal.getMood() + 2);
+            System.out.println(animal.getFavoriteActivity() + " is " + animal.getAnimalName() +
+                    "'s favorite activity. Mood level: " + animal.getMood());
+        }else {
+
+            animal.setMood(animal.getMood() + 1);
+            System.out.println("Mood level: " + animal.getMood());
+        }
     }
 }

@@ -27,7 +27,7 @@ public class App
         animal1.setHunger(9);
         animal1.setMood(3);
         animal1.setFavoriteFood("Pedigree");
-        animal1.setFavoriteActivity("Frizbee");
+        animal1.setFavoriteActivity("Frisbee");
 
         Animal dog1 = new Dog("Lord");
         dog1.setAnimalAge(3);
