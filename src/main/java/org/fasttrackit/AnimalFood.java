@@ -12,8 +12,8 @@ public class AnimalFood {
     private java.util.Date expiryDate;
 
     //Constructor for AnimalFood class
-    public AnimalFood(String type) {
-        this.type = type;
+    public AnimalFood(String foodName) {
+        this.foodName = foodName;
     }
 
 
@@ -63,5 +63,12 @@ public class AnimalFood {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    @Override
+    public String toString() {
+        return "AnimalFood{" +
+                "foodName='" + foodName + '\'' +
+                '}';
     }
 }

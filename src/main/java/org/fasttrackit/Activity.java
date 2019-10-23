@@ -25,4 +25,11 @@ public class Activity {
     public void setDurationInMinutes(int durationInMinutes) {
         this.durationInMinutes = durationInMinutes;
     }
+
+    @Override
+    public String toString() {
+        return "Activity{" +
+                "activityName='" + activityName + '\'' +
+                '}';
+    }
 }
