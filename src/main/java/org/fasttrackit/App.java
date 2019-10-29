@@ -12,7 +12,7 @@ public class App
 {
     public static void main( String[] args ) throws Exception
     {
-
+/*
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         String expiryDate = "28/11/2020";
         Date date = sdf.parse(expiryDate);
@@ -86,11 +86,11 @@ public class App
         dog1.animalMoodRate(dog1.getMood());
         cat1.animalMoodRate(cat1.getMood());
 
-/*
+*/
     Game game = new Game();
 
     game.start();
 
-*/
+
     }
 }
