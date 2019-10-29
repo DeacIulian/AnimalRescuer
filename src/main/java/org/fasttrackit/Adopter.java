@@ -32,7 +32,7 @@ public class Adopter {
                 " to " + animal.getAnimalName());
         animal.setHunger(animal.getHunger() - 1);
 
-        if (animal.getFavoriteFood() == animalFood.getFoodName()) {
+        if (animal.getFavoriteFood().equals(animalFood.getFoodName())) {
 
             animal.setMood(animal.getMood() + 1);
             System.out.println(animalFood.getFoodName() + " is " + animal.getAnimalName() +
@@ -47,7 +47,7 @@ public class Adopter {
     public void recreationActivity(Animal animal, Activity activity) {
         System.out.println(getName() + " is going for  " + activity.getActivityName() + " with "
                 + animal.getAnimalName() + " tonight ");
-        if (animal.getFavoriteActivity() == activity.getActivityName()) {
+        if (animal.getFavoriteActivity().equals(activity.getActivityName())) {
 
             animal.setMood(animal.getMood() + 2);
             System.out.println(animal.getFavoriteActivity() + " is " + animal.getAnimalName() +

@@ -46,7 +46,7 @@ public class Game {
         System.out.println("Available animal food is: ");
 
         for (AnimalFood animalFood: availableAnimalFood) {
-            System.out.println(animalFood);
+            System.out.println(animalFood.getFoodName());
         }
     }
 
@@ -54,7 +54,7 @@ public class Game {
         System.out.println("Available activities are: ");
 
         for (int i = 0; i < availaleActivities.length; i++) {
-            System.out.println(availaleActivities[i]);
+            System.out.println(availaleActivities[i].getActivityName());
         }
     }
 }
