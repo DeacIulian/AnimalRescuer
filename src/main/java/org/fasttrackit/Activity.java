@@ -6,9 +6,9 @@ public class Activity {
     private int durationInMinutes;
 
     //Constructor for Activity class
-    public Activity(String activityName) {
-        this.activityName = activityName;
-    }
+    //public Activity(String activityName) {
+    //    this.activityName = activityName;
+    //}
 
     public String getActivityName() {
         return activityName;

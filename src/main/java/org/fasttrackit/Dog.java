@@ -5,9 +5,9 @@ public class Dog extends Animal{
     private boolean trained;
 
     //Constructor for super class name
-    public Dog(String animalName) {
-        super(animalName);
-    }
+    //public Dog(String animalName) {
+    //    super(animalName);
+    //}
 
     public boolean isTrained() {
         return trained;

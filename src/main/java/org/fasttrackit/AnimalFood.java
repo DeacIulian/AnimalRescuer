@@ -12,9 +12,9 @@ public class AnimalFood {
     private java.util.Date expiryDate;
 
     //Constructor for AnimalFood class
-    public AnimalFood(String foodName) {
-        this.foodName = foodName;
-    }
+    //public AnimalFood(String foodName) {
+    //    this.foodName = foodName;
+    //}
 
 
     //Encapsulating atributes for Food class

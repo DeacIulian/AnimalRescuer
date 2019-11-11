@@ -6,9 +6,9 @@ public class Veterinarian {
 
 
     //Constructor for veteranian
-    public Veterinarian(String specialization) {
-        this.specialization = specialization;
-    }
+    //public Veterinarian(String specialization) {
+    //    this.specialization = specialization;
+    //}
 
     public String getName() {
         return name;

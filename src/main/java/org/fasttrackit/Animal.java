@@ -2,7 +2,7 @@ package org.fasttrackit;
 
 public class Animal  {
     private String animalName;
-    private double animalAge;
+    private int animalAge;
     private int health;
     private int hunger;
     private int mood;
@@ -10,9 +10,9 @@ public class Animal  {
     private String favoriteActivity;
 
     //Constructor for Animal class
-    public Animal(String animalName) {
-        this.animalName = animalName;
-    }
+    //public Animal(String animalName) {
+    //    this.animalName = animalName;
+    //}
 
     //Encapsulating atributes for Animal class
     public int getHealth() {
@@ -79,7 +79,7 @@ public class Animal  {
         return animalAge;
     }
 
-    public void setAnimalAge(double animalAge) {
+    public void setAnimalAge(int animalAge) {
 
         this.animalAge = animalAge;
     }

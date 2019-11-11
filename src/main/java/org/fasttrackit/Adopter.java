@@ -5,9 +5,9 @@ public class Adopter {
     private double moneyAmount;
 
     //Constructor for Adopter
-    public Adopter(double moneyAmount) {
-        this.moneyAmount = moneyAmount;
-    }
+    //public Adopter(double moneyAmount) {
+    //    this.moneyAmount = moneyAmount;
+    //}
 
     public String getName() {
         return adopterName;
@@ -25,20 +25,30 @@ public class Adopter {
         this.moneyAmount = moneyAmount;
     }
 
-    //Creating a method wich the Adopter give food to the Animal
+    //Creating a method which the Adopter give food to the Animal
 
-    public void feeding(Animal animal, AnimalFood animalFood){
+    public void feeding(Animal animal, AnimalFood animalFood) {
+
         System.out.println(getName() + " just gave some " + animalFood.getFoodName() + " food " +
                 " to " + animal.getAnimalName());
-        animal.setHunger(animal.getHunger() - 1);
+        if (animal.getHunger() >= 0) {
+            animal.setHunger(animal.getHunger() - 1);
+        }
 
-        if (animal.getFavoriteFood().equals(animalFood.getFoodName())) {
 
-            animal.setMood(animal.getMood() + 1);
-            System.out.println(animalFood.getFoodName() + " is " + animal.getAnimalName() +
-                    "'s preferate food. Mood level: " + animal.getMood());
+        if (animalFood.getFoodName().equals(animal.getFavoriteFood())) {
+                animal.setMood(animal.getMood() + 1);
+                if(animal.getMood() <= 10) {
+                    System.out.println(animalFood.getFoodName() + " is " + animal.getAnimalName() +
+                            "'s favorite food. Mood level: " + animal.getMood());
+                }else{
+                    System.out.println(animalFood.getFoodName() + " is " + animal.getAnimalName() +
+                            "'s favorite food. Mood level: 10");
+                }
+
 
         }
+
 
         System.out.println("Hunger level : " + animal.getHunger());
 
@@ -49,13 +59,22 @@ public class Adopter {
                 + animal.getAnimalName() + " tonight ");
         if (animal.getFavoriteActivity().equals(activity.getActivityName())) {
 
-            animal.setMood(animal.getMood() + 2);
-            System.out.println(animal.getFavoriteActivity() + " is " + animal.getAnimalName() +
-                    "'s favorite activity. Mood level: " + animal.getMood());
-        }else {
+                animal.setMood(animal.getMood() + 2);
+                if(animal.getMood() <= 10) {
+                    System.out.println(animal.getFavoriteActivity() + " is " + animal.getAnimalName() +
+                            "'s favorite activity. Mood level: " + animal.getMood());
+                }else{
+                    System.out.println(animal.getFavoriteActivity() + " is " + animal.getAnimalName() +
+                            "'s favorite activity. Mood level: 10");
+                }
+        } else {
 
-            animal.setMood(animal.getMood() + 1);
-            System.out.println("Mood level: " + animal.getMood());
+                animal.setMood(animal.getMood() + 1);
+                if(animal.getMood() <= 10) {
+                    System.out.println("Mood level: " + animal.getMood());
+                }else {
+                    System.out.println("Mood level: 10");
+                }
         }
     }
 }

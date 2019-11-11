@@ -5,9 +5,9 @@ public class Cat extends Animal{
     private String breed;
 
     //Constructor for super class name
-    public Cat(String animalName) {
-        super(animalName);
-    }
+    //public Cat(String animalName) {
+    //    super(animalName);
+    //}
 
     public String getBreed() {
         return breed;
